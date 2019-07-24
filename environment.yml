@@ -5,6 +5,7 @@ dependencies:
   - python
   - numpy
   - pip
+  - nb_conda_kernels
   - pip:
     - nbgitpuller
     - sphinx-gallery
