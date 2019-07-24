@@ -1,0 +1,18 @@
+# This script helps users build their own conda environments by 
+# running commands to create a folder to store environments after
+# installing the environment.
+# Based on these instructions: 
+# https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html?highlight=html#allow-users-to-create-their-own-conda-environments-for-notebooks
+# 
+
+#!/bin/bash
+
+# Creates .condarc
+conda config
+
+# Adds the following lines to .condarc. Anaconda will install new
+# environments to the folder my-conda-envs
+echo "envs_dirs:" >> .condarc
+echo "  - /home/jovyan/my-conda-envs/" >> .condarc
+
+# conda create -n myenv ipykernel scipy
