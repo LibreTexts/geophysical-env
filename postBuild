@@ -1,11 +1,10 @@
+#!/bin/bash
+
 # This script helps users build their own conda environments by 
 # running commands to create a folder to store environments after
 # installing the environment.
 # Based on these instructions: 
 # https://zero-to-jupyterhub.readthedocs.io/en/latest/user-environment.html?highlight=html#allow-users-to-create-their-own-conda-environments-for-notebooks
-# 
-
-#!/bin/bash
 
 # Creates .condarc
 conda config
